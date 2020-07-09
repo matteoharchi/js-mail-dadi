@@ -19,9 +19,6 @@
 // DADI
 var dadoutente = Math.floor(Math.random()*6)+1;
 var dadocpu = Math.floor(Math.random()*6)+1;
-
-console.log(dadoutente);
-console.log(dadocpu);
 // LANCIO DADO
 var result;
 if (dadoutente > dadocpu) {
@@ -32,7 +29,6 @@ if (dadoutente > dadocpu) {
     result = "Hai perso!"
 }
 // RISULTATO
-console.log(result);
 document.getElementById('result-utente').innerHTML = dadoutente;
 document.getElementById('result-cpu').innerHTML = dadocpu;
 document.getElementById('winner').innerHTML = result;
