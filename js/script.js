@@ -1,5 +1,5 @@
 // var lista = ["pincopallo@gmail.com" , "giovanpaolo@hotmail.it" , "riccardofuffolo@umail.com"];
-// var mail = prompt("Inserisci la tua mail");
+// var mail = prompt("Inserisci la tua mail per giocare");
 // var ok = false;
 // for (var i= 0; i <= lista.length ; i++) {
 //   if (mail== lista[i]) {
@@ -15,10 +15,14 @@
 // vada ad applicarsi solo al valore inserito. Infatti, in questo modo, il
 // risultato che riceverò sarà limitato a quello della variabile sentinella.
 
+
+// DADI
 var dadoutente = Math.floor(Math.random()*6)+1;
 var dadocpu = Math.floor(Math.random()*6)+1;
+
 console.log(dadoutente);
 console.log(dadocpu);
+// LANCIO DADO
 var result;
 if (dadoutente > dadocpu) {
      result = "Hai Vinto!";
@@ -27,5 +31,8 @@ if (dadoutente > dadocpu) {
 } else {
     result = "Hai perso!"
 }
+// RISULTATO
 console.log(result);
-document.getElementById('dadoutente').innerHTML = dadoutente + "  " + dadocpu + result;
+document.getElementById('result-utente').innerHTML = dadoutente;
+document.getElementById('result-cpu').innerHTML = dadocpu;
+document.getElementById('winner').innerHTML = result;
